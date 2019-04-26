@@ -43,6 +43,3 @@ DONT_DEXPREOPT_PREBUILTS := true
 WITH_DEXPREOPT_PIC := true
 endif
 endif
-
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
