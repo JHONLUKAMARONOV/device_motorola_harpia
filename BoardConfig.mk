@@ -43,3 +43,6 @@ DONT_DEXPREOPT_PREBUILTS := true
 WITH_DEXPREOPT_PIC := true
 endif
 endif
+
+# SELinux
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
