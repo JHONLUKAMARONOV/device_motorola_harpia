@@ -44,4 +44,6 @@
         <item>15</item>
     </integer-array>
 
+    <!-- Is the battery LED intrusive? -->
+    <bool name="config_intrusiveBatteryLed">true</bool>
 </resources>
