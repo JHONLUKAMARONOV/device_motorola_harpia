@@ -15,20 +15,14 @@
 
 $(call inherit-product, device/motorola/harpia/full_harpia.mk)
 
-# Inherit some common LOS stuff.
-$(call inherit-product, vendor/cosp/config/common_full_phone.mk)
+# Inherit some AOSP stuff.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n.mk)
 
-# Boot animation
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_BOOT_ANIMATION_RES := 720
-TARGET_BOOTANIMATION_HALF_RES := true
-TARGET_USE_OLD_SOUND_PICKER := true
-
-## Device identifier. This must come after all inclusions
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := harpia
-PRODUCT_NAME := cosp_harpia
+PRODUCT_NAME := aosp_harpia
 PRODUCT_MODEL := Moto G Play
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
