@@ -40,5 +40,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := motorola/harpia/harpia:7.1.1/NPIS26.48-36-5/12:user/release-keys
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
 # Use Jelly
 TARGET_USE_JELLY := true
