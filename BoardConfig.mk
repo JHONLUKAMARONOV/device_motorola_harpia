@@ -23,7 +23,7 @@ DEVICE_PATH := device/motorola/harpia
 TARGET_OTA_ASSERT_DEVICE := harpia,harpia_retail
 
 # Kernel
-TARGET_KERNEL_CONFIG := harpia_defconfig
+TARGET_KERNEL_CONFIG := recovery_harpia_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216     # 16384 * 1024 mmcblk0p31

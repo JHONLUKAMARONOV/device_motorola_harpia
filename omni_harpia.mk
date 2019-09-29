@@ -15,20 +15,18 @@
 
 $(call inherit-product, device/motorola/harpia/full_harpia.mk)
 
-# Inherit some common LOS stuff.
-$(call inherit-product, vendor/cosp/config/common_full_phone.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n.mk)
+# Inherit some Omni stuff.
+$(call inherit-product, build/target/product/embedded.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_BOOTANIMATION_HALF_RES := true
-TARGET_USE_OLD_SOUND_PICKER := true
 
-## Device identifier. This must come after all inclusions
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := harpia
-PRODUCT_NAME := cosp_harpia
+PRODUCT_NAME := omni_harpia
 PRODUCT_MODEL := Moto G Play
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
@@ -41,3 +39,9 @@ BUILD_FINGERPRINT := motorola/harpia/harpia:7.1.1/NPIS26.48-36-5/12:user/release
 
 # Use Jelly
 TARGET_USE_JELLY := true
+
+# Enable stock zip packages flash
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.secure=1 \
+    ro.adb.secure=0 \
+    ro.allow.mock.location=0
