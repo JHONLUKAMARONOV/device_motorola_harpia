@@ -14,9 +14,9 @@
 # language governing permissions and limitations under the
 # License.
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/magma_harpia.mk
+   $(LOCAL_DIR)/arrow_harpia.mk
 
 COMMON_LUNCH_CHOICES := \
-    magma_harpia-eng \
-    magma_harpia-userdebug \
-    magma_harpia-user
+    arrow_harpia-eng \
+    arrow_harpia-userdebug \
+    arrow_harpia-user
