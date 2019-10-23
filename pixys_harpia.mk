@@ -1,5 +1,5 @@
 # Copyright (C) 2016 The CyanogenMod Project
-#               2017 The lineageOS Project
+#               2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 
 # Inherit some common and LineageOS stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
 $(call inherit-product, device/motorola/harpia/full_harpia.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n.mk)
@@ -29,7 +29,7 @@ TARGET_USE_OLD_SOUND_PICKER := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := harpia
-PRODUCT_NAME := lineage_harpia
+PRODUCT_NAME := pixys_harpia
 PRODUCT_MODEL := Moto G Play
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
